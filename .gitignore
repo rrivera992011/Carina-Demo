@@ -23,5 +23,5 @@
 hs_err_pid*
 
 # Libraries #
-reports/
-target/
+/reports
+/target
