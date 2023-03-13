@@ -23,6 +23,6 @@
 hs_err_pid*
 
 # Libraries #
-/reports
-/target
+/laba/reports
+/laba/target
 /.idea
