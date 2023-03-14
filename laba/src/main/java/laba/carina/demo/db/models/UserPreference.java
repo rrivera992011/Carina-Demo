@@ -1,4 +1,4 @@
-package laba.carina.demo.db.models;
+package main.java.laba.carina.demo.db.models;
 
 public class UserPreference {
 

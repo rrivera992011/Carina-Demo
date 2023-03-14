@@ -1,8 +1,8 @@
-package laba.carina.demo.utils;
+package main.java.laba.carina.demo.utils;
 
 import com.zebrunner.carina.utils.factory.ICustomTypePageFactory;
-import laba.carina.demo.gui.saucedemo.pages.LoginPage;
-import laba.carina.demo.gui.saucedemo.pages.ProductsPage;
+import main.java.laba.carina.demo.gui.saucedemo.pages.LoginPage;
+import main.java.laba.carina.demo.gui.saucedemo.pages.ProductsPage;
 import org.testng.Assert;
 
 public class LoginUtil implements ICustomTypePageFactory {

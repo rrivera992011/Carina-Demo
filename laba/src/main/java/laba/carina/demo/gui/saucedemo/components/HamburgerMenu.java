@@ -1,10 +1,9 @@
-package laba.carina.demo.gui.saucedemo.components;
+package main.java.laba.carina.demo.gui.saucedemo.components;
 
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.gui.AbstractUIObject;
-import laba.carina.demo.gui.saucedemo.pages.AboutPage;
-import laba.carina.demo.gui.saucedemo.pages.LoginPage;
-import org.openqa.selenium.SearchContext;
+import main.java.laba.carina.demo.gui.saucedemo.pages.AboutPage;
+import main.java.laba.carina.demo.gui.saucedemo.pages.LoginPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 

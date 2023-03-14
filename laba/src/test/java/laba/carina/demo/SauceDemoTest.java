@@ -3,10 +3,10 @@ package laba.carina.demo;
 import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
 import com.zebrunner.carina.core.registrar.tag.Priority;
 import com.zebrunner.carina.core.registrar.tag.TestPriority;
-import laba.carina.demo.gui.saucedemo.components.HamburgerMenu;
-import laba.carina.demo.gui.saucedemo.components.ProductItem;
-import laba.carina.demo.gui.saucedemo.components.TopBarMenu;
-import laba.carina.demo.gui.saucedemo.pages.*;
+import main.java.laba.carina.demo.gui.saucedemo.components.HamburgerMenu;
+import main.java.laba.carina.demo.gui.saucedemo.components.ProductItem;
+import main.java.laba.carina.demo.gui.saucedemo.components.TopBarMenu;
+import main.java.laba.carina.demo.gui.saucedemo.pages.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

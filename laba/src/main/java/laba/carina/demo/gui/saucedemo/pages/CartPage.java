@@ -1,4 +1,4 @@
-package laba.carina.demo.gui.saucedemo.pages;
+package main.java.laba.carina.demo.gui.saucedemo.pages;
 
 import com.amazonaws.event.DeliveryMode;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;

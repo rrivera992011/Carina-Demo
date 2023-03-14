@@ -1,6 +1,6 @@
-package laba.carina.demo.db.mappers;
+package main.java.laba.carina.demo.db.mappers;
 
-import laba.carina.demo.db.models.User;
+import main.java.laba.carina.demo.db.models.User;
 
 public interface UserMapper {
 

@@ -1,4 +1,4 @@
-package laba.carina.demo.gui.saucedemo.components;
+package main.java.laba.carina.demo.gui.saucedemo.components;
 
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.gui.AbstractUIObject;

@@ -1,4 +1,4 @@
-package laba.carina.demo.api;
+package main.java.laba.carina.demo.api;
 
 import com.qaprosoft.carina.core.foundation.api.AbstractApiMethodV2;
 import com.qaprosoft.carina.core.foundation.api.annotation.Endpoint;
