@@ -8,8 +8,8 @@ import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
-import main.java.laba.carina.demo.db.mappers.UserMapper;
-import main.java.laba.carina.demo.db.mappers.UserPreferenceMapper;
+import laba.carina.demo.db.mappers.UserMapper;
+import laba.carina.demo.db.mappers.UserPreferenceMapper;
 
 public class ConnectionFactory {
 	private static SqlSessionFactory factory;

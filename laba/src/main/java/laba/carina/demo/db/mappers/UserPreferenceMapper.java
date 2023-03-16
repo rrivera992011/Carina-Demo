@@ -1,6 +1,6 @@
-package main.java.laba.carina.demo.db.mappers;
+package laba.carina.demo.db.mappers;
 
-import main.java.laba.carina.demo.db.models.UserPreference;
+import laba.carina.demo.db.models.UserPreference;
 
 public interface UserPreferenceMapper {
 

@@ -14,9 +14,9 @@ import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
 import com.zebrunner.carina.core.registrar.tag.Priority;
 import com.zebrunner.carina.core.registrar.tag.TestPriority;
 
-import main.java.laba.carina.demo.api.DeleteEmployeeMethod;
-import main.java.laba.carina.demo.api.GetAllEmployeesMethod;
-import main.java.laba.carina.demo.api.CreateEmployeeMethod;
+import laba.carina.demo.api.DeleteEmployeeMethod;
+import laba.carina.demo.api.GetAllEmployeesMethod;
+import laba.carina.demo.api.CreateEmployeeMethod;
 
 /**
  * This sample shows how create REST API tests.

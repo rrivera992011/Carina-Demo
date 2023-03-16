@@ -1,4 +1,4 @@
-package main.java.laba.carina.demo.gui.saucedemo.pages;
+package laba.carina.demo.gui.saucedemo.pages;
 
 import com.amazonaws.event.DeliveryMode;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class CartPage extends AbstractPage {
+
     @FindBy(xpath = "//span[@class='title'][text()='Your Cart']")
     private ExtendedWebElement titleLabel;
 

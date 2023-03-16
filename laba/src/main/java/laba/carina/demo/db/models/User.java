@@ -1,4 +1,4 @@
-package main.java.laba.carina.demo.db.models;
+package laba.carina.demo.db.models;
 
 import java.util.ArrayList;
 import java.util.List;

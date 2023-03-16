@@ -1,16 +1,17 @@
-package main.java.laba.carina.demo.gui.saucedemo.pages;
+package laba.carina.demo.gui.saucedemo.pages;
 
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.PageOpeningStrategy;
 import com.qaprosoft.carina.core.gui.AbstractPage;
-import main.java.laba.carina.demo.gui.saucedemo.components.ProductItem;
-import main.java.laba.carina.demo.gui.saucedemo.components.TopBarMenu;
+import laba.carina.demo.gui.saucedemo.components.ProductItem;
+import laba.carina.demo.gui.saucedemo.components.TopBarMenu;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
 
 public class ProductsPage extends AbstractPage {
+
     @FindBy(xpath = "//span[@class='title'][text()='Products']")
     private ExtendedWebElement titleLabel;
 

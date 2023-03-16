@@ -3,10 +3,11 @@ package laba.carina.demo;
 import com.zebrunner.carina.core.registrar.ownership.MethodOwner;
 import com.zebrunner.carina.core.registrar.tag.Priority;
 import com.zebrunner.carina.core.registrar.tag.TestPriority;
-import main.java.laba.carina.demo.gui.saucedemo.components.HamburgerMenu;
-import main.java.laba.carina.demo.gui.saucedemo.components.ProductItem;
-import main.java.laba.carina.demo.gui.saucedemo.components.TopBarMenu;
-import main.java.laba.carina.demo.gui.saucedemo.pages.*;
+import com.zebrunner.carina.utils.R;
+import laba.carina.demo.gui.saucedemo.components.HamburgerMenu;
+import laba.carina.demo.gui.saucedemo.components.ProductItem;
+import laba.carina.demo.gui.saucedemo.components.TopBarMenu;
+import laba.carina.demo.gui.saucedemo.pages.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -18,8 +19,8 @@ public class SauceDemoTest extends SauceDemoAbstractTest {
     @MethodOwner(owner = "Rafael")
     @TestPriority(Priority.P0)
     public void testProductAddedToCart() {
-        String username = "standard_user";
-        String password = "secret_sauce";
+        String username = R.TESTDATA.get("standard_username");
+        String password = R.TESTDATA.get("standard_password");
 
         String productName = "Sauce Labs Backpack";
         ProductsPage productsPage = loginUtil.login(username, password);
@@ -42,8 +43,8 @@ public class SauceDemoTest extends SauceDemoAbstractTest {
     @MethodOwner(owner = "Rafael")
     @TestPriority(Priority.P0)
     public void testAddToCartAndCheckout() {
-        String username = "standard_user";
-        String password = "secret_sauce";
+        String username = R.TESTDATA.get("standard_username");
+        String password = R.TESTDATA.get("standard_password");
         String productName = "Sauce Labs Backpack";
         String firstName = "Apple";
         String lastName = "Jack";
@@ -81,8 +82,8 @@ public class SauceDemoTest extends SauceDemoAbstractTest {
     @MethodOwner(owner = "Rafael")
     @TestPriority(Priority.P0)
     public void testClickOnAboutPage(){
-        String username = "standard_user";
-        String password = "secret_sauce";
+        String username = R.TESTDATA.get("standard_username");
+        String password = R.TESTDATA.get("standard_password");
 
         ProductsPage productsPage = loginUtil.login(username, password);
         Assert.assertTrue(productsPage.isPageOpened(),"Products page is not opened");
@@ -98,8 +99,8 @@ public class SauceDemoTest extends SauceDemoAbstractTest {
     @MethodOwner(owner = "Rafael")
     @TestPriority(Priority.P0)
     public void testSortProductsAndAddToCart(){
-        String username = "standard_user";
-        String password = "secret_sauce";
+        String username = R.TESTDATA.get("standard_username");
+        String password = R.TESTDATA.get("standard_password");
         String productOrderOption = "za";
         String productName = "Sauce Labs Onesie";
 
@@ -128,8 +129,8 @@ public class SauceDemoTest extends SauceDemoAbstractTest {
     @MethodOwner(owner = "Rafael")
     @TestPriority(Priority.P0)
     public void testLogOutFromProductsPage(){
-        String username = "standard_user";
-        String password = "secret_sauce";
+        String username = R.TESTDATA.get("standard_username");
+        String password = R.TESTDATA.get("standard_password");
 
         ProductsPage productsPage = loginUtil.login(username, password);
         Assert.assertTrue(productsPage.isPageOpened(),"Products page is not opened");

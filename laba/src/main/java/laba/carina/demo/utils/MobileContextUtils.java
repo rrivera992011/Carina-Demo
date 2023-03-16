@@ -1,4 +1,4 @@
-package main.java.laba.carina.demo.utils;
+package laba.carina.demo.utils;
 
 import java.lang.invoke.MethodHandles;
 import java.util.Set;

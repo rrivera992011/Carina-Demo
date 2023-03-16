@@ -1,4 +1,4 @@
-package main.java.laba.carina.demo.gui.saucedemo.components;
+package laba.carina.demo.gui.saucedemo.components;
 
 import com.qaprosoft.carina.core.foundation.webdriver.decorator.ExtendedWebElement;
 import com.qaprosoft.carina.core.gui.AbstractUIObject;
@@ -7,6 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.FindBy;
 
 public class ProductItem extends AbstractUIObject {
+
     @FindBy(xpath = ".//div[@class='inventory_item_name']")
     private ExtendedWebElement productTitleLabel;
 
