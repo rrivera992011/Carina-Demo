@@ -1,5 +1,6 @@
 package laba.carina.demo.utils;
 
+import com.zebrunner.carina.utils.R;
 import com.zebrunner.carina.utils.factory.ICustomTypePageFactory;
 import laba.carina.demo.gui.saucedemo.pages.LoginPage;
 import laba.carina.demo.gui.saucedemo.pages.ProductsPage;
@@ -15,5 +16,9 @@ public class LoginUtil implements ICustomTypePageFactory {
         loginPage.typePassword(password);
 
         return loginPage.clickLoginButton();
+    }
+
+    public ProductsPage loginStandardUser(){
+        return login(R.TESTDATA.get("standard_username"), R.TESTDATA.get("standard_password"));
     }
 }

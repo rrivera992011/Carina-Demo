@@ -19,11 +19,8 @@ public class SauceDemoTest extends SauceDemoAbstractTest {
     @MethodOwner(owner = "Rafael")
     @TestPriority(Priority.P0)
     public void testProductAddedToCart() {
-        String username = R.TESTDATA.get("standard_username");
-        String password = R.TESTDATA.get("standard_password");
-
         String productName = "Sauce Labs Backpack";
-        ProductsPage productsPage = loginUtil.login(username, password);
+        ProductsPage productsPage = loginUtil.loginStandardUser();
         Assert.assertTrue(productsPage.isPageOpened(),"Products page is not opened");
         List<ProductItem> products = productsPage.getProducts();
 
@@ -43,14 +40,12 @@ public class SauceDemoTest extends SauceDemoAbstractTest {
     @MethodOwner(owner = "Rafael")
     @TestPriority(Priority.P0)
     public void testAddToCartAndCheckout() {
-        String username = R.TESTDATA.get("standard_username");
-        String password = R.TESTDATA.get("standard_password");
         String productName = "Sauce Labs Backpack";
         String firstName = "Apple";
         String lastName = "Jack";
         String postalCode = "23456";
 
-        ProductsPage productsPage = loginUtil.login(username, password);
+        ProductsPage productsPage = loginUtil.loginStandardUser();
         Assert.assertTrue(productsPage.isPageOpened(),"Products page is not opened");
         List<ProductItem> products = productsPage.getProducts();
 
@@ -82,10 +77,7 @@ public class SauceDemoTest extends SauceDemoAbstractTest {
     @MethodOwner(owner = "Rafael")
     @TestPriority(Priority.P0)
     public void testClickOnAboutPage(){
-        String username = R.TESTDATA.get("standard_username");
-        String password = R.TESTDATA.get("standard_password");
-
-        ProductsPage productsPage = loginUtil.login(username, password);
+        ProductsPage productsPage = loginUtil.loginStandardUser();
         Assert.assertTrue(productsPage.isPageOpened(),"Products page is not opened");
 
         TopBarMenu topBarMenu = productsPage.getTopBarMenu();
@@ -99,12 +91,10 @@ public class SauceDemoTest extends SauceDemoAbstractTest {
     @MethodOwner(owner = "Rafael")
     @TestPriority(Priority.P0)
     public void testSortProductsAndAddToCart(){
-        String username = R.TESTDATA.get("standard_username");
-        String password = R.TESTDATA.get("standard_password");
         String productOrderOption = "za";
         String productName = "Sauce Labs Onesie";
 
-        ProductsPage productsPage = loginUtil.login(username, password);
+        ProductsPage productsPage = loginUtil.loginStandardUser();
         Assert.assertTrue(productsPage.isPageOpened(),"Products page is not opened");
 
         productsPage.clickOnProductSortContainer();
@@ -129,10 +119,7 @@ public class SauceDemoTest extends SauceDemoAbstractTest {
     @MethodOwner(owner = "Rafael")
     @TestPriority(Priority.P0)
     public void testLogOutFromProductsPage(){
-        String username = R.TESTDATA.get("standard_username");
-        String password = R.TESTDATA.get("standard_password");
-
-        ProductsPage productsPage = loginUtil.login(username, password);
+        ProductsPage productsPage = loginUtil.loginStandardUser();
         Assert.assertTrue(productsPage.isPageOpened(),"Products page is not opened");
 
         TopBarMenu topBarMenu = productsPage.getTopBarMenu();
